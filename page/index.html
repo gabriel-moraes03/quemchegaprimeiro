@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quem é o Mais Veloz</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="conteiner">
+            <header>
+                <h1>Quem é o Mais Veloz?</h1>
+                <p>Clique para correr e tente chegar antes do Sonic na linha de chegada!</p>
+            </header>
+
+            <div id="telaDificuldade" class="tela">
+                <p class="explicacao">
+                    O Sonic vai correr até a linha de chegada. Clique no botão "Clique para Correr!"
+                    (ou aperte a barra de espaço) repetidamente para o seu personagem avançar mais rápido
+                    que ele. Quanto maior a dificuldade, menos tempo o Sonic leva para cruzar a pista!
+                </p>
+                <h2>Escolha a dificuldade</h2>
+                <div class="botoesDificuldade">
+                    <button onclick="iniciarJogo('facil')">Fácil</button>
+                    <button onclick="iniciarJogo('medio')">Médio</button>
+                    <button onclick="iniciarJogo('dificil')">Difícil</button>
+                    <button onclick="iniciarJogo('impossivel')">Impossível</button>
+                </div>
+            </div>
+
+            <div id="telaJogo" class="tela escondido">
+                <div class="pista">
+                    <div class="raia">
+                        <img id="sonic" src="../recursos/sonic.png" alt="Sonic">
+                    </div>
+                    <div class="raia raiaJogador">
+                        <img id="jogador" src="../recursos/papa-leguas-1.png" alt="Jogador">
+                    </div>
+                    <div class="chegada"></div>
+                </div>
+                <p id="status"></p>
+                <button id="btnCorrer" onclick="avancar()">Clique para Correr!</button>
+                <button id="btnReiniciar" class="escondido" onclick="reiniciarJogo()">Jogar Novamente</button>
+            </div>
+
+            <footer>
+                <p><b>Desenvolvido por:</b> Gabriel Moraes</p>
+                <p><b>Copyright:</b> 2026</p>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.conteiner {
+    text-align: center;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #E8DBC3;
+    color: #4A3728;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+footer {
+    background-color: #E8DBC3;
+    color: #4A3728;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.tela {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.escondido {
+    display: none !important;
+}
+
+.explicacao {
+    max-width: 500px;
+    background-color: #4A2308;
+    color: #FFF;
+    border: 4px solid #000;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.botoesDificuldade {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botoesDificuldade button {
+    background-color: #B08968;
+    color: #4A2308;
+}
+
+.botoesDificuldade button:hover {
+    background-color: #8B6A4A;
+}
+
+button {
+    background-color: #B08968;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #8B6A4A;
+}
+
+.pista {
+    position: relative;
+    width: 600px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #6B3410;
+    border: 4px solid #4A2308;
+    border-radius: 6px;
+}
+
+.raia {
+    position: relative;
+    height: 80px;
+    background-color: #A0522D;
+    border-bottom: 3px dashed #fff;
+    margin-bottom: 10px;
+}
+
+.raia:last-child {
+    margin-bottom: 0;
+}
+
+.raia img {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 55px;
+    transition: left 0.1s linear;
+}
+
+.chegada {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 6px;
+    background: repeating-linear-gradient(45deg, #000, #000 8px, #fff 8px, #fff 16px);
+}
+
+#status {
+    font-size: 20px;
+    font-weight: bold;
+}
